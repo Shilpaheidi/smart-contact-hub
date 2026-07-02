@@ -1,0 +1,534 @@
+<div class="min-h-screen bg-slate-50 text-slate-700 font-sans">
+  <header
+    class="inset-x-0 top-0 flex flex-col sm:flex-row sm:items-center sm:justify-between border-slate-200"
+  >
+    <div class="w-full">
+      <div class="flex p-4 md:p-6 items-center gap-2 text-xs text-slate-500">
+        <span>Send Marketing Message</span>
+        <span>&gt;</span>
+        <span class="font-medium text-slate-700">Compose Message</span>
+      </div>
+      <div
+        class="flex items-start bg-white shadow-sm gap-3 border-b border-slate-200 p-3"
+      >
+        <button
+          class="self-center flex items-center justify-center w-8 h-8 rounded-lg border border-purple-200 bg-white text-purple-600 hover:bg-purple-50 transition"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-4 h-4"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5L8.25 12l7.5-7.5"
+            />
+          </svg>
+        </button>
+        <div>
+          <h1 class="text-xl font-bold text-slate-800">
+            Customize Your Message
+          </h1>
+          <p class="text-xs text-slate-500">
+            Fill in the required details based on your selected template to
+            complete the message setup.
+          </p>
+        </div>
+      </div>
+      <div class="flex flex-wrap gap-8 bg-white p-4 shadow-sm mb-6 text-xs">
+        <div>
+          <span class="block text-slate-400 font-medium mb-0.5"
+            >Template Name</span
+          >
+          <span class="font-semibold text-slate-800">Diwali Sale</span>
+        </div>
+
+        <div>
+          <span class="block text-slate-400 font-medium mb-0.5"
+            >Template ID</span
+          >
+          <span class="font-semibold text-slate-800">5798525851493</span>
+        </div>
+
+        <div>
+          <span class="block text-slate-400 font-medium mb-0.5"
+            >Message Type</span
+          >
+          <span class="font-semibold text-slate-800">Text and Rich Media</span>
+        </div>
+
+        <div>
+          <span class="block text-slate-400 font-medium mb-0.5">Language</span>
+          <span class="font-semibold text-slate-800">English</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="space-y-6 pb-24 ml-4 mr-4">
+    <section class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+      <h2 class="text-base font-bold text-slate-800 mb-4">Header</h2>
+
+      <div class="grid grid-cols-1 xl:grid-cols-[35%] lg:grid-cols-[55%] gap-4">
+        <div class="">
+          <div class="flex justify-between items-center mb-1">
+            <label class="text-xs font-semibold text-slate-700"
+              >Image URL</label
+            >
+            <span class="text-[10px] text-slate-400">0/2048</span>
+          </div>
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="https://"
+              class="w-full text-sm pl-3 pr-10 py-2 border border-slate-200 rounded-lg focus:outline-none focus:border-purple-500 transition placeholder-slate-300"
+            />
+            <button
+              class="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs font-mono px-1 rounded bg-slate-5"
+            >
+              {{ "{}" }}
+            </button>
+          </div>
+          <p class="text-[10px] text-slate-400 mt-1">
+            Link to supported file format: .jpg, .jpeg, .png up to 5MB. Image
+            may be cropped on certain devices. Recommended resolution: 1125 x
+            600 px.
+          </p>
+        </div>
+
+        <div class="">
+          <div class="flex justify-between items-center mb-1">
+            <label class="text-xs font-semibold text-slate-700"
+              >Video URL</label
+            >
+            <span class="text-[10px] text-slate-400">0/2048</span>
+          </div>
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="https://"
+              class="w-full text-sm pl-3 pr-10 py-2 border border-slate-200 rounded-lg focus:outline-none focus:border-purple-500 transition placeholder-slate-300"
+            />
+            <button
+              class="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs font-mono px-1 rounded bg-slate-5"
+            >
+              {{ "{}" }}
+            </button>
+          </div>
+          <p class="text-[10px] text-slate-400 mt-1">
+            Link to supported file format: MP4 up to 16 MB. Video may be cropped
+            on certain devices. Recommended resolution: 1125 x 600 px.
+          </p>
+        </div>
+
+        <div class="">
+          <div class="flex justify-between items-center mb-1">
+            <label class="text-xs font-semibold text-slate-700"
+              >Document URL</label
+            >
+            <span class="text-[10px] text-slate-400">0/2048</span>
+          </div>
+          <div class="relative">
+            <input
+              type="text"
+              placeholder="https://"
+              class="w-full text-sm pl-3 pr-10 py-2 border border-slate-200 rounded-lg focus:outline-none focus:border-purple-500 transition placeholder-slate-300"
+            />
+            <button
+              class="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs font-mono px-1 rounded bg-slate-5"
+            >
+              {{ "{}" }}
+            </button>
+          </div>
+          <p class="text-[10px] text-slate-400 mt-1">
+            Link to supported file format: PDF up to 100MB.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1"
+              >Location Latitude</label
+            >
+            <input
+              type="number"
+              placeholder="0"
+              class="w-full text-sm px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:border-purple-500 transition"
+            />
+            <p class="text-[10px] text-slate-400 mt-1">
+              Latitude can be any number between -90 and 90
+            </p>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 mb-1"
+              >Location Longitude</label
+            >
+            <input
+              type="number"
+              placeholder="0"
+              class="w-full text-sm px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:border-purple-500 transition"
+            />
+            <p class="text-[10px] text-slate-400 mt-1">
+              Longitude can be any number between -180 and 180
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm relative"
+    >
+      <h2 class="text-base font-bold text-slate-800 mb-4">Message</h2>
+
+      <div class="grid grid-cols-1 xl:grid-cols-[35%] lg:grid-cols-[55%] gap-4">
+        <div>
+          <label
+            class="block text-xs font-semibold text-slate-700 mb-1"
+            ngNonBindable
+            >Variable {{ 1 }}</label
+          >
+          <div class="relative flex items-center">
+            <input
+              type="text"
+              placeholder="Enter variable content"
+              class="w-full text-sm pl-3 pr-16 py-2 border border-slate-200 rounded-lg focus:outline-none focus:border-purple-500 transition"
+            />
+            <div class="absolute right-2 flex items-center gap-1">
+              <button
+                class="text-slate-400 p-1 hover:bg-slate-100 rounded transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-3.5 h-3.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"
+                  />
+                </svg>
+              </button>
+              <button
+                class="bg-purple-600 text-white text-xs px-1.5 py-0.5 rounded font-mono"
+              >
+                {{ "{}" }}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="relative">
+          <label
+            class="block text-xs font-semibold text-slate-700 mb-1"
+            ngNonBindable
+            >Variable {{ 2 }}</label
+          >
+          <div class="relative flex items-center">
+            <input
+              type="text"
+              placeholder="Enter variable content"
+              class="w-full text-sm pl-3 pr-16 py-2 border border-slate-200 rounded-lg focus:outline-none focus:border-purple-500 border-purple-400"
+            />
+            <button
+              class="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs font-mono px-1 rounded bg-slate-5"
+            >
+              {{ "{}" }}
+            </button>
+          </div>
+
+          <div
+            class="absolute z-10 top-full right-0 w-56 bg-white border border-slate-200 rounded-xl shadow-lg text-xs overflow-hidden -translate-y-17"
+          >
+            <div
+              class="p-2 border-b border-slate-100 bg-slate-50 flex items-center gap-1.5"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="2"
+                stroke="currentColor"
+                class="w-3.5 h-3.5 text-slate-400"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.604 10.604z"
+                />
+              </svg>
+              <input
+                type="text"
+                placeholder="Search Standard Attributes"
+                class="w-full bg-transparent focus:outline-none text-[11px]"
+              />
+            </div>
+            <div
+              class="flex text-[10px] font-semibold border-b border-slate-100 text-center"
+            >
+              <button
+                class="w-1/2 py-1.5 text-purple-600 border-b-2 border-purple-600"
+              >
+                Standard
+              </button>
+              <button class="w-1/2 py-1.5 text-slate-400 hover:bg-slate-50">
+                Custom
+              </button>
+            </div>
+            <ul
+              class="max-h-40 overflow-y-auto py-1 text-slate-600 divide-y divide-slate-200"
+              ngNonBindable
+            >
+              <li
+                class="px-3 py-1.5 hover:bg-slate-50 flex items-center gap-2 cursor-pointer font-medium"
+              >
+                <span class="text-slate-400 font-mono">&#123;&#125;</span>
+                First Name
+              </li>
+              <li
+                class="px-3 py-1.5 hover:bg-slate-50 flex items-center gap-2 cursor-pointer font-medium"
+              >
+                <span class="text-slate-400 font-mono">&#123;&#125;</span>
+                Last Name
+              </li>
+              <li
+                class="px-3 py-1.5 hover:bg-slate-50 flex items-center gap-2 cursor-pointer font-medium"
+              >
+                <span class="text-slate-400 font-mono">&#123;&#125;</span>
+                Address
+              </li>
+              <li
+                class="px-3 py-1.5 hover:bg-slate-50 flex items-center gap-2 cursor-pointer font-medium"
+              >
+                <span class="text-slate-400 font-mono">&#123;&#125;</span>
+                City
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+      <h2 class="text-base font-bold text-slate-800 mb-4">Buttons</h2>
+
+      <div class="grid grid-cols-1 xl:grid-cols-[35%] lg:grid-cols-[55%] gap-4">
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <label
+              class="text-xs font-semibold text-slate-700 flex items-center gap-1"
+            >
+              "Yes" button payload
+              <span
+                class="text-slate-400 cursor-help text-[11px] border border-slate-300 rounded-full w-3.5 h-3.5 inline-flex items-center justify-center font-serif"
+                >i</span
+              >
+            </label>
+          </div>
+          <input
+            type="text"
+            placeholder="Enter the payload"
+            class="w-full text-sm px-3 py-2 border border-slate-200 rounded-lg focus:outline-none focus:border-purple-500 transition"
+          />
+          <button
+            class="absolute right-2.5 top-1/2 -translate-y-1/2 text-slate-400 hover:text-slate-600 text-xs font-mono px-1 rounded bg-slate-5"
+          >
+            {{ "{}" }}
+          </button>
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <label
+              class="text-xs font-semibold text-slate-700 flex items-center gap-1"
+            >
+              "No" button payload
+              <span
+                class="text-slate-400 cursor-help text-[11px] border border-slate-300 rounded-full w-3.5 h-3.5 inline-flex items-center justify-center font-serif"
+                >i</span
+              >
+            </label>
+            <span class="text-[10px] text-slate-400">0/128</span>
+          </div>
+          <div class="relative flex items-center">
+            <input
+              type="text"
+              placeholder="Enter the payload"
+              class="w-full text-sm pl-3 pr-16 py-2 border border-slate-200 rounded-lg focus:outline-none focus:border-purple-500 transition"
+            />
+            <div class="absolute right-2 flex items-center gap-1">
+              <button
+                class="text-slate-400 p-1 hover:bg-slate-100 rounded transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-3.5 h-3.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"
+                  />
+                </svg>
+              </button>
+              <button
+                class="text-slate-400 font-mono text-xs px-1 border border-slate-200 rounded bg-slate-50"
+              >
+                {{ "{}" }}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <label
+              class="text-xs font-semibold text-slate-700 flex items-center gap-1"
+            >
+              "Unsubscribe!" button payload
+              <span
+                class="text-slate-400 cursor-help text-[11px] border border-slate-300 rounded-full w-3.5 h-3.5 inline-flex items-center justify-center font-serif"
+                >i</span
+              >
+            </label>
+            <span class="text-[10px] text-slate-400">0/128</span>
+          </div>
+          <div class="relative flex items-center">
+            <input
+              type="text"
+              placeholder="Enter the payload"
+              class="w-full text-sm pl-3 pr-16 py-2 border border-slate-200 rounded-lg focus:outline-none focus:border-purple-500 transition"
+            />
+            <div class="absolute right-2 flex items-center gap-1">
+              <button
+                class="text-slate-400 p-1 hover:bg-slate-100 rounded transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-3.5 h-3.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"
+                  />
+                </svg>
+              </button>
+              <button
+                class="text-slate-400 font-mono text-xs px-1 border border-slate-200 rounded bg-slate-50"
+              >
+                {{ "{}" }}
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="flex justify-between items-center mb-1">
+            <label
+              class="text-xs font-semibold text-slate-700 flex items-center gap-1"
+            >
+              "Visit website" URL parameter
+              <span
+                class="text-slate-400 cursor-help text-[11px] border border-slate-300 rounded-full w-3.5 h-3.5 inline-flex items-center justify-center font-serif"
+                >i</span
+              >
+            </label>
+          </div>
+          <div class="relative flex items-center">
+            <input
+              type="text"
+              placeholder="Enter the payload"
+              class="w-full text-sm pl-3 pr-16 py-2 border border-slate-200 rounded-lg focus:outline-none focus:border-purple-500 transition"
+            />
+            <div class="absolute right-2 flex items-center gap-1">
+              <button
+                class="text-slate-400 p-1 hover:bg-slate-100 rounded transition"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="2"
+                  stroke="currentColor"
+                  class="w-3.5 h-3.5"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.023 9.348h4.992v-.001M2.985 19.644v-4.992m0 0h4.992m-4.993 0l3.181 3.183a8.25 8.25 0 0013.803-3.7M4.031 9.865a8.25 8.25 0 0113.803-3.7l3.181 3.182"
+                  />
+                </svg>
+              </button>
+              <button
+                class="text-slate-400 font-mono text-xs px-1 border border-slate-200 rounded bg-slate-50"
+              >
+                {{ "{}" }}
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer
+    class="fixed bottom-0 left-0 right-0 bg-white border-t border-slate-200 px-6 py-4 flex justify-end gap-3 shadow-lg z-20"
+  >
+    <button
+      class="px-3 py-1 sm:px-6 sm:py-2 border border-purple-600 text-purple-600 font-semibold rounded-3xl text-xs sm:text-sm hover:bg-purple-50 transition flex items-center gap-1"
+    >
+      Cancel
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        class="w-4 h-4"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M6 18L18 6M6 6l12 12"
+        />
+      </svg>
+    </button>
+
+    <button
+      class="px-4 py-1 sm:px-6 sm:py-2 bg-purple-600 text-white font-semibold rounded-3xl text-xs sm:text-sm hover:bg-purple-700 shadow-md shadow-purple-200 transition flex items-center gap-1"
+    >
+      Done composing
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="2"
+        stroke="currentColor"
+        class="w-4 h-4"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M4.5 12.75l6 6 9-13.5"
+        />
+      </svg>
+    </button>
+  </footer>
+</div>

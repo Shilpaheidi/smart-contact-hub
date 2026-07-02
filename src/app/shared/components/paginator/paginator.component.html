@@ -1,0 +1,9 @@
+<div class="border-t border-slate-200 bg-white">
+  <mat-paginator
+    [length]="length"
+    [pageSize]="pageSize"
+    [pageSizeOptions]="pageSizeOptions"
+    [showFirstLastButtons]="showFirstLastButtons"
+    (page)="onPageChange($event)">
+  </mat-paginator>
+</div>

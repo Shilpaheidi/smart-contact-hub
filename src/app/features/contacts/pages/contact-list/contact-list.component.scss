@@ -1,0 +1,15 @@
+table {
+  border-collapse: collapse;
+}
+
+tbody tr {
+  transition: all 0.2s ease;
+}
+
+button {
+  cursor: pointer;
+}
+
+input::placeholder {
+  color: #94a3b8;
+}

@@ -1,0 +1,9 @@
+<div
+*ngIf="toast.toast$ | async as t"
+class="toast"
+[class.success]="t.type==='success'"
+[class.error]="t.type==='error'">
+
+{{t.message}}
+
+</div>

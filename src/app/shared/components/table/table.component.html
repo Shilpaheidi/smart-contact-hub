@@ -1,0 +1,57 @@
+<div class="overflow-x-auto">
+
+  <table class="min-w-full border border-slate-200">
+
+  
+    <thead class="bg-slate-100">
+      <tr>
+        <th
+          *ngFor="let col of columns"
+          class="px-6 py-3 text-left text-sm font-semibold text-slate-700">
+        {{ col.label }}
+        </th>
+
+        <th class="px-6 py-3 text-center text-sm font-semibold text-slate-700">
+          Actions
+        </th>
+      </tr>
+    </thead>
+
+    <tbody class="divide-y divide-slate-200">
+
+      <tr *ngFor="let row of data; trackBy: trackById" class="hover:bg-slate-50">
+
+        <td class="px-6 py-4" *ngFor="let col of columns">
+          {{ row[col.key] }}
+        </td>
+
+  
+        <td class="px-6 py-4">
+          <div class="flex justify-center gap-2">
+
+            <button
+              (click)="onEdit(row)"
+              class="px-4 py-2 bg-blue-500 text-white rounded-lg text-sm">
+              Edit
+            </button>
+
+            <button
+              (click)="onDelete(row)"
+              class="px-4 py-2 bg-red-500 text-white rounded-lg text-sm">
+              Delete
+            </button>
+
+          </div>
+        </td>
+
+      </tr>
+<tr *ngIf="!data?.length">
+  <td colspan="100%" class="text-center p-4 text-slate-500">
+    No data available
+  </td>
+</tr>
+    </tbody>
+
+  </table>
+
+</div>
