@@ -1,39 +1,4 @@
-<!-- <a
-  *ngIf="routerLink; else normalBtn"
-  [routerLink]="routerLink"
-  class="inline-block">
 
-  <button
-    [type]="type"
-    [disabled]="disabled"
-    class="px-5 py-2 rounded-lg text-sm font-semibold transition"
-    [ngClass]="{
-      'bg-purple-600 hover:bg-purple-700 text-white': variant === 'primary',
-      'border border-slate-300 text-slate-700 hover:bg-slate-100': variant === 'secondary',
-      'opacity-50 cursor-not-allowed': disabled
-    }">
-
-    <ng-content></ng-content>
-
-  </button>
-
-</a>
-
-<ng-template #normalBtn>
-  <button
-    [type]="type"
-    [disabled]="disabled"
-    class="px-5 py-2 rounded-lg text-sm font-semibold transition"
-    [ngClass]="{
-      'bg-purple-600 hover:bg-purple-700 text-white': variant === 'primary',
-      'border border-slate-300 text-slate-700 hover:bg-slate-100': variant === 'secondary',
-      'opacity-50 cursor-not-allowed': disabled
-    }">
-
-    <ng-content></ng-content>
-
-  </button>
-</ng-template> -->
 
 <button
   [type]="type"
@@ -41,7 +6,7 @@
   [routerLink]="routerLink"
   class="px-5 py-2 rounded-lg text-sm font-semibold transition"
   [ngClass]="{
-    'bg-purple-600 hover:bg-purple-700 text-white': variant === 'primary',
+    'bg-purple-600 hover:bg-blue-700 text-white': variant === 'primary',
     'border border-slate-300 text-slate-700 hover:bg-slate-100': variant === 'secondary',
     'opacity-50 cursor-not-allowed': disabled
   }"
